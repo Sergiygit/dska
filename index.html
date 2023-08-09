@@ -6,17 +6,71 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230807202952">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230809134133">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900&_v=20230807202952" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900&_v=20230809134133" rel="stylesheet" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="10" class="header">
 			<div class="header__container">
+				<a href="./index.html" class="header__logo">
+					<img src="img/header/Logo.svg" alt="logo">
+				</a>
+				<div class="header__body">
+					<div class="header__body-top">
+						<div data-da=".menu__body, 824.98, 3" class="header__text">
+							<span>Steel Frame Fabrication</span> in Houston, TX
+						</div>
+						<ul data-da=".menu__body, 991.98, 2" class="header__socials">
+							<li class="header__social">
+								<a target="_blank" href="https://www.instagram.com/dska_steel/" class="header__social-link">
+									<picture><source srcset="img/header/instagram.webp" type="image/webp"><img src="img/header/instagram.png" alt="image-social"></picture>
+								</a>
+							</li>
+							<li class="header__social">
+								<a target="_blank" href="https://api.whatsapp.com/send/?phone=14632091586" class="header__social-link">
+									<picture><source srcset="img/header/whatsapp.webp" type="image/webp"><img src="img/header/whatsapp.png" alt="image-social"></picture>
+								</a>
+							</li>
+						</ul>
+						<ul data-da=".menu__body, 600.98, 4" class="header__contact">
+							<li class="header__number">
+								<a href="tel:18324769779" class="header__number-link">
+									+1 (832) 476-9779
+								</a>
+							</li>
+							<li class="header__mail">
+								<a href="mailto:office@dskasteel.com" class="header__mail-link">office@dskasteel.com</a>
+							</li>
+						</ul>
+						<button data-popup="#popup" class="header__button">
+							REQUEST A CALL
+						</button>
+						<div class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="https://dskasteel.com/" class="menu__link">Home</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__body-bottom">
+						<ul class="header__bottom-menu">
+							<li class="header__menu-item">
+								<a href="./index.html#fabricate" data-goto=".fabricate" data-goto-header class="header__menu-link">
+									WHAT WE FABRICATE
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main class="page">
@@ -226,13 +280,97 @@
 					</p>
 				</div>
 			</div>
+			<div class="page__instruction">
+				<div class="page__container">
+					<picture><source srcset="img/instruction.webp" type="image/webp"><img src="img/instruction.png" alt="instruction"></picture>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<h2 class="footer__title title">
+					CONTACT US
+				</h2>
+				<div class="footer__content">
+					<ul class="footer__information">
+						<li class="footer__item-information">
+							<a target="_blank" href="#" class="footer__link-information">
+								<picture><source srcset="img/footer/location.webp" type="image/webp"><img src="img/footer/location.png" alt="icon-information"></picture>
+								<span>5829 West Sam Houston Parkway North, Suite #707,
+									Houston, Texas 77041</span>
+							</a>
+						</li>
+						<li class="footer__item-information">
+							<a href="tel:18324769779" class="footer__link-information">
+								<picture><source srcset="img/footer/phone.webp" type="image/webp"><img src="img/footer/phone.png" alt="icon-information"></picture>
+								<span>+1 (832) 476-9779</span>
+							</a>
+						</li>
+						<li class="footer__item-information">
+							<a target="_blank" href="https://api.whatsapp.com/send/?phone=14632091586" class="footer__link-information">
+								<picture><source srcset="img/footer/whatsapp.webp" type="image/webp"><img src="img/footer/whatsapp.png" alt="icon-information"></picture>
+								<span>Send message on WhatsApp
+								</span>
+							</a>
+						</li>
+						<li class="footer__item-information">
+							<a href="mailto:office@dskasteel.com" class="footer__link-information">
+								<picture><source srcset="img/footer/email.webp" type="image/webp"><img src="img/footer/email.png" alt="icon-information"></picture>
+								<span>office@dskasteel.com</span>
+							</a>
+						</li>
+						<li class="footer__item-information">
+							<picture><source srcset="img/footer/time.webp" type="image/webp"><img src="img/footer/time.png" alt="icon-time"></picture>
+							<ul class="footer__work-time">
+								<li>Mon-Fri 09:30 – 18:00</li>
+								<li>Sat_____ 10:00 – 15:00</li>
+								<li>Sun day .................... off</li>
+							</ul>
+						</li>
+					</ul>
+					<form action="telegram.php" method="POST" class="footer__form">
+						<div class="footer__inputs">
+							<input autocomplete="off" type="text" name="email" data-error="Ошибка" placeholder="Email" class="footer__input">
+							<input autocomplete="off" type="text" name="phone" data-error="Ошибка" placeholder="Phone" class="footer__input">
+						</div>
+						<textarea name="message" placeholder="Message" class="footer__textarea"></textarea>
+						<button class="footer__button">
+							REQUEST A CALL
+						</button>
+						<div class="footer__form-text">
+							By clicking on the button, you consent to the processing of the entered data and agree to the User Agreement
+						</div>
+					</form>
+
+				</div>
 			</div>
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1685.0493284829179!2d-95.50783200057755!3d29.608044673255584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e917a84db2e9%3A0xb85dabb4765cf6d4!2zMTUwMTUgRm9uZHJlbiBSZCwgTWlzc291cmkgQ2l0eSwgVFggNzc0ODksINCh0KjQkA!5e0!3m2!1sru!2sua!4v1674388632730!5m2!1sru!2sua" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230807202952"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div class="popup__body">
+					<form action="telegram.php" method="POST" class="popup__form">
+						<div class="popup__inputs">
+							<input autocomplete="off" type="text" name="email" data-error="Ошибка" placeholder="Email" class="popup__input">
+							<input autocomplete="off" type="text" name="phone" data-error="Ошибка" placeholder="Phone" class="popup__input">
+						</div>
+						<textarea name="message" placeholder="Message" class="popup__textarea" id="message"></textarea>
+						<button class="popup__button">request a call</button>
+						<div class="popup__text">
+							<p>By clicking on the button, you consent to the processing of the entered data and agree to the User Agreement</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230809134133"></script>
 </body>
 
 </html>
